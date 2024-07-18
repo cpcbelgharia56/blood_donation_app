@@ -27,7 +27,7 @@ function DonorRegister(){
             body: JSON.stringify(new_donor)
         };
 
-        const response = await fetch('http://localhost:5000/registerdonor', requestOptions);
+        const response = await fetch('https://blood-donation-services.onrender.com/registerdonor', requestOptions);
         const data = await response.json();
 
         if(data._id!=null)
